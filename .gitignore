@@ -1,0 +1,6 @@
+.nextflow.lo*
+.nextflow.pid
+.nextflow/
+PO_Q1_1.fq.gz
+PO_Q1_2.fq.gz
+work/

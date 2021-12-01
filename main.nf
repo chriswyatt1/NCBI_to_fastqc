@@ -1,6 +1,6 @@
 #!/usr/bin/env nextflow
 
-params.out_dir = "My_out"
+params.out_dir = "FASTQC_results"
 params.rawReads="$baseDir/*_{1,2}.fq.gz"
 params.ncbi_api_key = 'PLEASE_ENTER_YOUR_KEY'
 
@@ -26,7 +26,7 @@ process runFastQC{
 }
 
 process runMultiQC{
-
+    publishDir params.out_dir , mode: 'copy'
     input:
         file('*') from fastqc_files.collect()
 
