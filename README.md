@@ -23,5 +23,11 @@ Scroll down to API key section. Copy your key.
 ```
 Important flags:
 
---accession 'SRA0000000'
+--accession 'SRP288364'
 ```
+
+#Example working run:
+
+nextflow run main.nf -bg --ncbi_api_key 5a10761a49511my_ncbi_codedc85d6c07c7b08 --accession SRP288364
+
+The NCBI key above is fake (just for example).
