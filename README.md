@@ -31,3 +31,8 @@ Important flags:
 nextflow run main.nf -bg --ncbi_api_key 5a10761a49511my_ncbi_codedc85d6c07c7b08 --accession SRP288364
 
 The NCBI key above is fake (just for example).
+
+
+#To get better names on the plots. 
+
+Go to SRA. Download by Send to, File, RunINfo and Summary. Sort by SRX Experiment names in the two files. Then Match SRR column with a column that is more informative, or write your own labels. Then in the MultiQC report, go to the toolbox on the right hand side and choose "change name" and paste in a tab separated list of IDs to name. 
